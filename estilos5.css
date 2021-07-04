@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    align-items: center;
+}
+
+section h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+section p{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+section a{
+    display: inline-block;
+    padding: 7px 0;
+    color: #283773;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background: #fff;
+}
+
+
+section img{
+    height: 60%;
+}
+
+section:nth-child(1){
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+section:nth-child(2){
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+section:nth-child(3){
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+section:nth-child(4){
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+section:nth-child(5){
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+section:nth-child(6){
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+section:nth-child(7){
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+section:nth-child(8){
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+section:nth-child(9){
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+@media screen and (max-width:600px){
+    section{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    section > img{
+        height: 25%;
+    }
+}
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu #item{
+    float: left;
+}
+
+#menu #item a{
+    background: rgba(0,51,102,1);
+    color: white;
+    padding: 12px 22px;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    background: #ef8354;
+}
+
+#menu #desple{
+    display: none;
+    position: absolute;
+    min-width: 220px;
+}
+
+#menu #item a:hover{
+     background: rgb(31, 43, 54);
+}
+#menu #item:hover #desple{
+        display:block;
+}
